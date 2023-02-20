@@ -1,0 +1,15 @@
+ALGORITHM sum_overlapping_elements
+VAR
+   str1:CHAR := [3, 1, 7, 9];
+   str2:CHAR := [2, 4, 1, 9, 3];
+   sum:INTEGER:= 0
+
+BEGIN
+    FOR i in str1  DO
+        FOR j in str2 DO
+            IF (str1.charAt[i]!=str2.charAt[j]) 
+                sum++
+            END_IF
+        END_FOR
+    END_FOR
+END
